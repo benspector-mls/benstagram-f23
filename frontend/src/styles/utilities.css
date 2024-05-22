@@ -3,6 +3,10 @@
   gap: 0.5rem;
 }
 
+section.flex-container {
+  gap: 1.5rem;
+}
+
 .space-between {
   justify-content: space-between;
 }

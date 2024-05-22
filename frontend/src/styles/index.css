@@ -27,6 +27,17 @@ textarea {
 button {
   padding: .125rem;
   min-width: 1.5rem;
+
+  background: rgb(23, 144, 219);
+  color: white;
+  height: 1.5 rem;
+  padding: .5rem;
+  border-radius: 3px;
+  border: 0;
+}
+
+button:hover {
+  background: lightskyblue;
 }
 
 input {
@@ -34,45 +45,12 @@ input {
 }
 
 main {
-  padding: 1rem;
+  padding: 2rem;
+  gap: 2rem !important;
 }
 
 ul {
   list-style: none;
-}
-
-.posts-list {
-  list-style: none;
-  width: 100%;
-}
-
-.post {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: .5rem;
-  align-items: center;
-  max-width: 350px;
-  min-height: 400px;
-  margin: auto;
-}
-
-.post img {
-  width: 300px;
-  height: 300px;
-}
-
-.post-date {
-  color: rgb(117, 117, 117)
-}
-
-.like-icon {
-  -webkit-text-stroke: 1px black;
-  color: white;
-}
-
-.like-icon.liked {
-  -webkit-text-stroke: 1px black;
-  color: rgb(255, 0, 93);
 }
 
 .modal {
@@ -92,4 +70,23 @@ ul {
   border-radius: 10px;
   border: 1px solid black;
   overflow-y: auto;
+}
+
+.user-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2a90db;
+}
+
+form {
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+form img {
+  max-width: 500px
 }

@@ -27,23 +27,25 @@ export default function SettingsPage() {
     event.target.reset();
   };
 
-  return <form className="flex-container column w-50 m-auto" onSubmit={handleSubmit} aria-labelledby="update-heading">
-    <h2 id="update-heading">Update User {currentUser.username} </h2>
-    <div>
-      <label htmlFor='bio-input'>New Bio</label>
-      <textarea placeholder='Enter your bio here...' id='bio-input' name='bio' />
-    </div>
-    <div>
-      <label htmlFor='username-input'>New Username</label>
-      <input placeholder='New Username' type='text' id='username-input' name='username' />
-    </div>
-    <div>
-      <label htmlFor='password-input'>New Password</label>
-      <input placeholder='New Password' id='password-input' name='password' />
-    </div>
+  return (
+    <form id='settings-form' className="flex-container column w-50 m-auto" onSubmit={handleSubmit} aria-labelledby="update-heading">
+      <h2 id="update-heading">Update User {currentUser.username} </h2>
+      <div>
+        <label htmlFor='bio-input'>New Bio</label>
+        <textarea placeholder='Enter your bio here...' id='bio-input' name='bio' />
+      </div>
+      <div>
+        <label htmlFor='username-input'>New Username</label>
+        <input placeholder='New Username' type='text' id='username-input' name='username' />
+      </div>
+      <div>
+        <label htmlFor='password-input'>New Password</label>
+        <input placeholder='New Password' id='password-input' name='password' />
+      </div>
 
-    <input type="hidden" name="id" value={currentUser.id} />
+      <input type="hidden" name="id" value={currentUser.id} />
 
-    <button>Submit</button>
-  </form>;
+      <button>Submit</button>
+    </form>
+  );
 }

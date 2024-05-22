@@ -20,7 +20,7 @@ export default function App() {
 
   return <>
     <SiteHeadingAndNav />
-    <main>
+    <main className='flex-container column'>
       <Routes>
         <Route path='/' element={<FeedPage />} />
         <Route path='/new-post' element={<NewPostPage />} />

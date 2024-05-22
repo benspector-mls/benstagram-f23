@@ -109,10 +109,7 @@ export default function UserPage() {
           <p>Following</p>
         </div>
       </div>
-      <div className='w-100 flex-container column centered'>
-        <h2>Posts by {profileUsername}</h2>
-        <PostsGrid posts={userData.posts} />
-      </div>
+      <PostsGrid posts={userData.posts} />
     </section>
 
     {/* Modals */}

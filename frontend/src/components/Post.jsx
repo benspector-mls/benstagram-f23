@@ -46,7 +46,7 @@ export default function Post({ post }) {
 
   return (
     <li className='post flex-container column'>
-      <div className='w-100 flex-container space-between'>
+      <div className='post-header w-100 flex-container space-between'>
         <div className="flex-container">
           <UserLink user={{ id: post.user_id, username: post.username }} />
           <i className="post-date">on {date}</i>
@@ -55,9 +55,9 @@ export default function Post({ post }) {
           currentUser.id === post.user_id && <button className='delete-post' onClick={handleDeletePost}>Delete</button>
         }
       </div>
-      <div className="post-content flex-container column">
-        <AdvancedImage cldImg={image} />
-        <i>{post.content}</i>
+      <AdvancedImage cldImg={image} />
+      <div className="post-footer flex-container column space-between">
+        <i className="post-content">{post.content}</i>
         <LikeButton onClick={handleLike} isLiked={likesInfo.isLikedByMe} likes={likesInfo.likes} />
       </div>
 

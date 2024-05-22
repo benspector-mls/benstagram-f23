@@ -1,3 +1,4 @@
+import '../styles/posts.css'
 import { useContext, useEffect } from "react";
 import Post from "../components/Post";
 import CurrentUserContext from "../contexts/CurrentUserContext.js";
