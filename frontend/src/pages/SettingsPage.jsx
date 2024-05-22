@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import CurrentUserContext from "../contexts/current-user-context";
+import CurrentUserContext from "../contexts/CurrentUserContext";
 import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { updateUser } from "../adapters/user-adapter";

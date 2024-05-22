@@ -1,10 +1,10 @@
+import '../styles/newPostForm.css'
 import { createPost } from "../adapters/post-adapter";
+import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
+import CurrentUserContext from "../contexts/CurrentUserContext"
 import CloudinaryUploadWidget from "../components/CloudinaryUploadWidget";
 import CloudinaryContext from '../contexts/CloudinaryContext'
-import CurrentUserContext from "../contexts/current-user-context"
-import '../styles/newPostForm.css'
-import { useNavigate } from "react-router-dom";
 import { fill } from "@cloudinary/url-gen/actions/resize";
 import { AdvancedImage } from '@cloudinary/react';
 

@@ -1,5 +1,3 @@
-var fs = require('fs');
-var https = require('https');
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
@@ -32,12 +30,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
-
-
-// Public Self-Signed Certificates for HTTPS connection
-// var privateKey = fs.readFileSync('./../certificates/key.pem', 'utf8');
-// var certificate = fs.readFileSync('./../certificates/cert.pem', 'utf8');
-
-// var credentials = { key: privateKey, cert: certificate };
-// const httpsServer = https.createServer(credentials, app)
-// httpsServer.listen(port);

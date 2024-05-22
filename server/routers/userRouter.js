@@ -7,7 +7,6 @@ const checkAuthentication = require('../middleware/checkAuthentication');
 
 const userRouter = express.Router();
 
-
 // Follows
 userRouter.post('/:user_id/followers', checkAuthentication, followControllers.createFollow)
 userRouter.delete('/:user_id/followers', checkAuthentication, followControllers.unFollow)

@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import Post from "../components/Post";
-import CurrentUserContext from "../contexts/current-user-context";
+import CurrentUserContext from "../contexts/CurrentUserContext.js";
 import { getLikesByUser } from "../adapters/like-adapter.js";
 
 export default function PostsGrid({ posts }) {

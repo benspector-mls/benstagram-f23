@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useContext, useState } from "react";
-import CurrentUserContext from "../contexts/current-user-context";
+import CurrentUserContext from "../contexts/CurrentUserContext";
 import '../styles/headingAndNav.css'
 
 export default function SiteHeadingAndNav() {

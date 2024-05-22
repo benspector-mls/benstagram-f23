@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { getAllPostsOfFollows } from "../adapters/post-adapter";
 import { Link } from 'react-router-dom'
-import CurrentUserContext from "../contexts/current-user-context"
+import CurrentUserContext from "../contexts/CurrentUserContext"
 import PostsGrid from "../components/PostsGrid";
 
 export default function FeedPage() {

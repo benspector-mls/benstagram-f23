@@ -1,11 +1,11 @@
+import '../styles/user.css'
 import { useContext, useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import CurrentUserContext from "../contexts/current-user-context";
+import CurrentUserContext from "../contexts/CurrentUserContext";
 import { getUser } from "../adapters/user-adapter";
 import { getPostsByUserId } from "../adapters/post-adapter";
 import { logUserOut } from "../adapters/auth-adapter";
 import { getFollowers, getFollows, createFollower, unFollow } from "../adapters/follow-adapter";
-import '../styles/user.css'
 import UsersList from '../components/UsersList';
 import PostsGrid from "../components/PostsGrid";
 import Modal from "../components/Modal";

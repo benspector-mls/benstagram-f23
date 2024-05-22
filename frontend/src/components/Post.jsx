@@ -3,9 +3,9 @@ import { fill } from "@cloudinary/url-gen/actions/resize";
 import { AdvancedImage } from '@cloudinary/react';
 import UserLink from "./UserLink";
 import { useContext, useState } from "react";
-import CurrentUserContext from "../contexts/current-user-context";
+import CurrentUserContext from "../contexts/CurrentUserContext.js";
 import { deletePost } from "../adapters/post-adapter";
-import { createLike, getLikesOfPost, unLike } from "../adapters/like-adapter.js";
+import { createLike, unLike } from "../adapters/like-adapter.js";
 import LikeButton from "./LikeButton";
 
 export default function Post({ post }) {
