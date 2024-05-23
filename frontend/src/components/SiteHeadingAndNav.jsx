@@ -11,8 +11,8 @@ export default function SiteHeadingAndNav() {
 
   const toggleShowNavLinks = () => setShowNavLinks((showNavLinks) => !showNavLinks);
 
-  return <header className="flex-container">
-    <div className="logo-container flex-container space-between">
+  return <header className="flex-container space-between">
+    <div className="logo-container flex-container">
       <a id='logo' href='/'>Benstagram</a>
       <a href="#" className={`toggle-button ${showNavLinks ? "active" : ''}`} onClick={toggleShowNavLinks}>
         {showNavLinks
