@@ -2,8 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* Use for testing */
-  /* border: 1px solid red !important; */
+}
+
+img {
+  width: 100%;
 }
 
 

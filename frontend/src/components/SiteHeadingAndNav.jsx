@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { useContext, useState } from "react";
 import CurrentUserContext from "../contexts/CurrentUserContext";
+import closeImg from '../assets/close.png'
+import hamburgerImg from '../assets/hamburger.png'
 import '../styles/headingAndNav.css'
 
 export default function SiteHeadingAndNav() {
@@ -9,13 +11,16 @@ export default function SiteHeadingAndNav() {
 
   const toggleShowNavLinks = () => setShowNavLinks((showNavLinks) => !showNavLinks);
 
-  return <header>
-    <a id='logo' href='/'>Benstagram</a>
-    <a href="#" className={`toggle-button ${showNavLinks ? "active" : ''}`} onClick={toggleShowNavLinks}>
-      <span className="bar" id='bar-1'></span>
-      <span className="bar" id='bar-2'></span>
-      <span className="bar" id='bar-3'></span>
-    </a>
+  return <header className="flex-container">
+    <div className="logo-container flex-container space-between">
+      <a id='logo' href='/'>Benstagram</a>
+      <a href="#" className={`toggle-button ${showNavLinks ? "active" : ''}`} onClick={toggleShowNavLinks}>
+        {showNavLinks
+          ? <img src={closeImg} />
+          : <img src={hamburgerImg} />
+        }
+      </a>
+    </div>
     <nav className={`navbar-links ${showNavLinks ? "active" : ''}`}>
       <ul>
         {

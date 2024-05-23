@@ -1,13 +1,9 @@
 header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  transition: 880ms;
-  /* background: #000; */
   background: rgb(23, 144, 219);
   color: white;
 }
@@ -17,15 +13,6 @@ header {
   font-weight: bold;
   text-decoration: none;
   color: #FFF;
-}
-
-.navbar {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  /* background-color: #333; */
-  color: white;
 }
 
 .brand-title {
@@ -55,40 +42,12 @@ header {
 }
 
 .navbar-links li:hover {
-  /* background-color: #555; */
   background-color: rgb(21, 129, 197);
 }
 
 .toggle-button {
-  position: absolute;
-  right: 1rem;
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  border-radius: 10px;
-  /* background-color: white; */
-  background-color: black;
-}
-
-.toggle-button.active #bar-1 {
-  transform: rotate(45deg) translate(-1px, -4px);
-  transform-origin: top left;
-}
-
-.toggle-button.active #bar-2 {
-  display: none;
-}
-
-.toggle-button.active #bar-3 {
-  transform: rotate(-45deg);
-  transform-origin: top left;
+  width: 2rem;
 }
 
 /* automatically added by NavLink component */
@@ -98,19 +57,26 @@ header {
   font-style: italic;
 }
 
-@media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.logo-container {
+  width: 100%;
+}
 
-  .toggle-button {
-    display: flex;
+@media (max-width: 800px) {
+  header {
+    flex-flow: column;
   }
 
   .navbar-links {
     display: none;
     width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .toggle-button {
+    display: flex;
   }
 
   .navbar-links ul {
@@ -124,9 +90,5 @@ header {
 
   .navbar-links ul li a {
     padding: .5rem 1rem;
-  }
-
-  .navbar-links.active {
-    display: flex;
   }
 }
