@@ -38,13 +38,8 @@
   color: rgb(117, 117, 117)
 }
 
-.like-icon {
-  -webkit-text-stroke: 1px black;
-  color: white;
-}
 
-.like-icon.liked {
-  -webkit-text-stroke: 1px black;
+.like-button.liked {
   color: rgb(255, 0, 93);
 }
 
@@ -52,7 +47,7 @@
   background: rgb(212, 7, 7);
   color: white;
   border-radius: 3px;
-  padding-block: .25rem;
+  padding-block: .25rem
 }
 
 .delete-post:hover {

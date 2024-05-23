@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+}
+
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 input,
