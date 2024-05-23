@@ -32,7 +32,6 @@ section.flex-container {
 }
 
 .grid {
-  min-width: 500px;
   width: fit-content;
   display: grid;
   grid-auto-rows: 1fr;
