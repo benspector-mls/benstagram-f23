@@ -21,7 +21,7 @@ export default function SiteHeadingAndNav() {
         }
       </a>
     </div>
-    <nav className={`navbar-links ${showNavLinks ? "active" : ''}`}>
+    <nav className={`navbar-links ${showNavLinks ? "active" : ''}`} onClick={() => { setShowNavLinks(false) }}>
       <ul>
         {
           currentUser
